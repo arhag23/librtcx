@@ -94,6 +94,7 @@ if(RTCX_STATIC_LINK_NVJITLINK)
   target_link_libraries(rtcx PRIVATE CUDA::nvJitLink_static)
   target_compile_definitions(rtcx PRIVATE RTCX_STATIC_LINK_LIBNVJITLINK=1)
 else()
+  target_link_libraries(rtcx PRIVATE CUDA::nvJitLink)
   target_compile_definitions(rtcx PRIVATE RTCX_STATIC_LINK_LIBNVJITLINK=0)
 endif()
 
