@@ -29,7 +29,7 @@ if(NOT TARGET zstd)
   rapids_cpm_find(zstd
                   1.5.7
                   GLOBAL_TARGETS
-                  zstd
+                  zstd::libzstd_static
                   BUILD_EXPORT_SET
                   rtcx-exports
                   INSTALL_EXPORT_SET
